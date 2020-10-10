@@ -2,7 +2,7 @@
 
 # Zenbit-Protocol-Prototype
 
-[Zenbit](http://zenbit.city/) is a protocol that reward users with NFTs and $ZNBT when they develop digital skills in urban or virtual enviroments. 
+[Zenbit](http://zenbit.city/) is a protocol for blockchain cities that rewards its users with NFTs and $ ZNBT for using and developing digital skills in urban or virtual environments.
 
 # Intro
 
@@ -10,8 +10,7 @@ Technology and financial gaps are the main obstacles that people worldwide face 
 
 #
 
-Zenbit protocol wants to tokenize the value of digital skills, creative assets, and urban governance participation, a prototype is being tested on Mexican urbanized zones with internet access, where users can interact with Zenbit’s Hub through a web navigator to complete tasks and gain economic value on tokens rewards or digital skills certificates on non-fungible tokens.
-
+Zenbit is a set of smart contracts for tokenizing the value of digital skills, creative assets, and urban governance participation. Users can interact with the protocol contracts on zenbit.city through a decentralized wallet integrated into their web browser. By completing tasks in which they use or develop their digital skills, users are rewarded with units of the $ ZNTB token and a collectible token (NFTs) that certifies the skill obtained during the task. 
 #
 
-The protocol has the purpose of establishing people’s digital skills, creative value, and citizenship as determining elements of access to financial services and jobs. We are looking to reach worldwide where people are facing similar challenges to boost their digital economy and where Zenbit protocol can help to close the digital gaps.
+The protocol is intended to boost both financial and digital inclusion by encouraging technological specialization, the production of creative value, and citizen participation; establishing them as determining elements in the access to decentralized financial services and digital job opportunities. 
