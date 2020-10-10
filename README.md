@@ -1,3 +1,5 @@
+![zenbitprotocol](https://ethglobal.s3.amazonaws.com/recpOPti0sCFpOzyf/Zenbit.gif)
+
 # Zenbit-Protocol-Prototype
 
 [Zenbit](http://zenbit.city/) is a protocol that reward users with NFTs and $ZNBT when they develop digital skills in urban or virtual enviroments. 
