@@ -15,4 +15,5 @@ Zenbit is a set of smart contracts for tokenizing the value of digital skills, c
 
 The protocol is intended to boost both financial and digital inclusion by encouraging technological specialization, the production of creative value, and citizen participation; establishing them as determining elements in the access to decentralized financial services and digital job opportunities.
 
-//Documentación en español disponible en https://habacuc-vera.gitbook.io/zenbit-protocol/
+## Documentación en español disponible en 
+https://habacuc-vera.gitbook.io/zenbit-protocol/
