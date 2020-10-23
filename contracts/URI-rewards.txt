@@ -1,0 +1,29 @@
+{
+"name": "zNBT",
+"description: "Zenbit Token",
+"image": ""
+}
+
+{
+"name": "CS1",
+"description: "Certificado de la habilidad Ciber Seguridad Nivel 1",
+"image": ""
+}
+
+{
+"name": "CS2",
+"description: "Certificado de la habilidad Ciber Seguridad Nivel 2",
+"image": ""
+}
+
+{
+"name": "DE1",
+"description: "Certificado de la habilidad Economía Digital Nivel 1",
+"image": ""
+}
+
+{
+"name": "DE2",
+"description: "Certificado de la habilidad Ciber Seguridad Nivel 2",
+"image": ""
+}
