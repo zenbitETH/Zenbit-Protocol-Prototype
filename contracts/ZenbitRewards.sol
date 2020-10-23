@@ -1,10 +1,10 @@
-pragma solidity ^0.6.0;
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/AccessControl.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/GSN/Context.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC1155/ERC1155.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC1155/ERC1155Holder.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC1155/ERC1155Burnable.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC1155/ERC1155Pausable.sol";
+pragma solidity ^0.6.2;
+import "openzeppelin-solidity/contracts/access/AccessControl.sol";
+import "openzeppelin-solidity/contracts/GSN/Context.sol";
+import "openzeppelin-solidity/contracts/token/ERC1155/ERC1155.sol";
+import "openzeppelin-solidity/contracts/token/ERC1155/ERC1155Holder.sol";
+import "openzeppelin-solidity/contracts/token/ERC1155/ERC1155Burnable.sol";
+import "openzeppelin-solidity/contracts/token/ERC1155/ERC1155Pausable.sol";
 
 contract ZenbitRewards is Context, AccessControl, ERC1155Burnable, ERC1155Pausable, ERC1155Holder {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
@@ -14,17 +14,13 @@ contract ZenbitRewards is Context, AccessControl, ERC1155Burnable, ERC1155Pausab
     uint256 public constant VAL2 = 3;
     uint256 public constant VAL3 = 4;
     uint256 public constant VAL4 = 5;
+    string public name;
    
-     constructor(string memory ZenbitRewards) public ERC1155 (ZenbitRewards) {
+     constructor(string memory ZenbitRewards, string memory _name) public ERC1155 (ZenbitRewards) {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
-
         _setupRole(MINTER_ROLE, _msgSender());
         _setupRole(PAUSER_ROLE, _msgSender());
-        _mint(msg.sender, 1, 1000000*10**18, "zNTB");
-        _mint(msg.sender, 2, 1*10**18, "CS1");
-        _mint(msg.sender, 3, 1*10**18, "CS2");
-        _mint(msg.sender, 4, 1*10**18, "DS1");
-        _mint(msg.sender, 5, 1*10**18, "DS2");
+        name = _name;
      }
 
    
@@ -60,9 +56,7 @@ contract ZenbitRewards is Context, AccessControl, ERC1155Burnable, ERC1155Pausab
         uint256[] memory ids,
         uint256[] memory amounts,
         bytes memory data
-    )
-        internal virtual override(ERC1155, ERC1155Pausable)
-    {
+    ) internal virtual override(ERC1155, ERC1155Pausable) {
         super._beforeTokenTransfer(operator, from, to, ids, amounts, data);
     }
 }
